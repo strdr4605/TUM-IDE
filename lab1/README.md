@@ -42,3 +42,28 @@ Shell should look like:
 - Now we will add remote to our host `git remote add origin https://github.com/strdr4605/TUM-IDE-labs.git`
 - Pull from remote repo to local `git pull origin master`
 - Now can work further on this project
+
+## Run some simple programs
+- By default ubuntu has python install so we can run any python script. However in order to run any others we have install the necessary compilers. So type in the following commands to install gcc, g++, ruby and nodejs:  
+
+    ```
+    sudo apt-get install gcc   
+    sudo apt-get install g++
+    sudo apt-get install ruby-full
+    sudo apt-get install -y nodejs
+    ```
+- After installation we can run **HelloWorldPrograms** that are located in `HelloWorldPrograms/` after we connected our local git with remote git from github.com
+
+    ```
+    gcc HelloWorldPrograms/main.c -o main
+    ./main
+
+    g++ HelloWorldPrograms/main.cpp -o maincpp
+    ./maincpp
+
+    ruby index.rb
+
+    node index.js
+
+    ```
+    ![Alt](images/hello_world_programs.png)
