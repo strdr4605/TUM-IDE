@@ -15,7 +15,7 @@ After droplet was created you will see hosts **IP address**:
 
 - Now we can easily connect with ssh to our remote server. In linux distributors we type in ```ssh  root@138.68.72.152```. You have to enter passphrase for your ssh key.
 
-![Alt](images/connect-server.png)
+![Alt](images/connect_server.png)
 
 - Next we will install fish shell, a smart and user-friendly command line shell for macOS, Linux, and the rest of the family. More information [here](https://fishshell.com/).  
 For installing fish we have to run following commands:
