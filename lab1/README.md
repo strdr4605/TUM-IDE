@@ -165,3 +165,8 @@ git-rebase - Reapply commits on top of another base tip. You can find more about
 ![Alt](images/rebase.png)
 
 ![Alt](images/rebase2.png)
+
+## GIT cherry-pick
+git-cherry-pick - Apply the changes introduced by some existing commits. More [here](https://git-scm.com/docs/git-cherry-pick)  
+
+![Alt](images/cherry_pick.png)
