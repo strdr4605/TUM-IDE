@@ -89,3 +89,26 @@ This is how it looks in command line:
 Should looks like:
 
 ![Alt](images/commit.png)
+
+## Reset a branch to previous commit
+- First we should all our commits using command: `git log`
+
+    ![Alt](images/git_log.png)
+
+- Temporarily switch to a different commit: `git checkout <commitID>`
+
+    ![Alt](images/return_commit.png)
+
+- Hard delete unpublished commits: `git reset --hard <commitID>` (will return do selected commit)
+
+    ![Alt](images/reset_head.png)
+
+## Merge branches and resolve a conflicts
+We will merge **frontend** branch in **backend**, so we should be on **backend** branch using `git checkout backend`  
+Next merge using `git merge frontend`
+
+![Alt](images/merge.png)
+
+We successful merged 2 branches but we have a conflict. Let solve it and commit changes. I will use vim to edit development.md file. More about vim [here](http://www.vim.org/)
+
+![Alt](images/resolve_conflict.png)
