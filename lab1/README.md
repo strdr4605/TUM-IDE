@@ -25,7 +25,8 @@ For installing fish we have to run following commands:
   * `fish` (to switch to fish shell)
   * `curl -L https://get.oh-my.fish | fish` (to install oh-my-fish. Check it [here](https://github.com/oh-my-fish/oh-my-fish))
   * `omf install simple-ass-prompt` (to install a simple theme)  
-Shell should look like:
+
+Shell should looks like:
 
 ![Alt](images/fish_shell.png)
 
@@ -64,6 +65,27 @@ Shell should look like:
     ruby index.rb
 
     node index.js
-
     ```
-    ![Alt](images/hello_world_programs.png)
+![Alt](images/hello_world_programs.png)
+
+## Create new branches
+
+- Add two new branches with `git branch nameOfBranch`
+- Move to new branch with `git checkout nameOfBranch`
+- Now we can commit to a new branch
+- If we want to move back or to another branch use again `git checkout anotherBranchName`
+
+This is how it looks in command line:
+
+![Alt](images/branch.png)
+
+## Committing on each branch
+
+- After switching to another branch using `git checkout frontend`
+- Create a file and write in it using `echo "#Frontend changes" >> development.md`
+- Adds all files to your local repository and stages it for commit. `git add .` (To unstage a file, use `git reset HEAD YOUR-FILE`.)
+- Commit changes using `git commit -m "Some changes in development"`
+
+Should looks like:
+
+![Alt](images/commit.png)
