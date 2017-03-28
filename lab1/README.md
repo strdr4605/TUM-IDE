@@ -62,9 +62,9 @@ Shell should looks like:
     g++ HelloWorldPrograms/main.cpp -o maincpp
     ./maincpp
 
-    ruby index.rb
+    ruby HelloWorldPrograms/index.rb
 
-    node index.js
+    nodejs HelloWorldPrograms/index.js
     ```
 ![Alt](images/hello_world_programs.png)
 
@@ -112,3 +112,30 @@ Next merge using `git merge frontend`
 We successful merged 2 branches but we have a conflict. Let solve it and commit changes. I will use vim to edit development.md file. More about vim [here](http://www.vim.org/)
 
 ![Alt](images/resolve_conflict.png)
+
+
+## Shell script
+- To run a file from our HelloWorldPrograms folder we will write a shell script
+
+    ```
+    #!/bin/sh
+
+    echo Enter file name
+    read FILE
+    case $FILE in
+    	*.c) gcc HelloWorldPrograms/$FILE -o ${FILE%.*} && ./${FILE%.*}
+    			 ;;
+    	*.py) python HelloWorldPrograms/$FILE
+    			 ;;
+      *.js) nodejs HelloWorldPrograms/$FILE
+      		 ;;
+      *.rb) ruby HelloWorldPrograms/index.rb
+           ;;
+
+    esac
+    ```
+
+- Give execute permission to script: `chmod +x /path/to/yourscript.sh`
+- Run script: `./yourscript.sh`
+
+    ![Alt](images/run_script.png)
