@@ -139,3 +139,22 @@ We successful merged 2 branches but we have a conflict. Let solve it and commit 
 - Run script: `./yourscript.sh`
 
     ![Alt](images/run_script.png)
+
+## GIT hooks
+Git hooks are scripts that Git executes before or after events such as: commit, push, and receive. You can find more info [here](http://githooks.com/) or [video](https://www.youtube.com/watch?v=MF72e-12dxE&t=326s)  
+I will make a simple script in shell what will print number of commits on branch before each commit
+Shell code:
+```
+#!/bin/sh
+
+currentbranch=`git branch | awk '/\*/ { print $2; }'`
+number=`git rev-list --count $currentbranch`
+
+echo $number 'commits on this branch'
+```
+- Create file `pre-commit` in `.git/hooks` folder
+- Paste code above in it
+- Give execute permission to script: `chmod +x pre-commit`
+And the result:
+
+![Alt](images/git_hook.png)
