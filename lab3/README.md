@@ -25,4 +25,4 @@ SmsSender is a service that run in background and send messages to a list of vic
 
     ![Alt](images/conflict_resolve.png)
 
-  You dont have do delete those lines of conflicts anymore. You just insert parts of code that you need from left or right sides in middle.
+  You don't have to delete those lines of conflicts anymore. You just insert parts of code that you need from left or right sides in middle.
