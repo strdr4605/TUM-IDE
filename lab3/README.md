@@ -12,7 +12,7 @@ Because we worked on it together we used some features of Android Studio to simp
 
 App is divided in class to simplify work flow.
 
-![Alt](images/class.png)
+![Alt](images/classes.png)
 
 My task is to build a friendly UI, get data from user and pass to database to store current user's tasks.
 SmsSender is a service that run in background and send messages to a list of victims. To simplify user's input data, I created something like ***.csv*** format but with spaces where last item of a row is the number of sender.
@@ -23,6 +23,6 @@ SmsSender is a service that run in background and send messages to a list of vic
 - We used `git` as our VCS and Google have implemented VCS in Android Studio, so it was easier for us to commit our changes.
 - One of the coolest features in Android Studio and others IDE from [jetbrains](https://www.jetbrains.com/) is conflicts resolving.  
 
-![Alt](images/conflict_resolve.png)
+    ![Alt](images/conflict_resolve.png)
 
-You dont have do delete those lines of conflicts anymore. You just insert parts of code that you need from left or right sides in middle. 
+  You dont have do delete those lines of conflicts anymore. You just insert parts of code that you need from left or right sides in middle.
