@@ -1,7 +1,7 @@
 # Integrated Development Environments Laboratory Work #4
 ## Web development
 
-For this laboratory work I used a web app that I made following an AngularJS course. AngularJS is an open source web application framework. More about it [here](https://angularjs.org/).
+For this laboratory work I used a web app that I made following an AngularJS course. AngularJS is an open source web application framework. More about it [here](https://angularjs.org/).  
 [AngularJS Weather Forecast](http://weather.devasid.com/#/) is a Single Page Application that inform about weather forecast in specified city. You can see the [repository](https://github.com/strdr4605/AngularJS-Weather-Forcast-SPA).  
 It is written in AngularJS 1 and I used [Atom](https://atom.io/) as a text editor. **Atom** is a cool, free text editor that I really like.
 
@@ -44,6 +44,6 @@ It is written in AngularJS 1 and I used [Atom](https://atom.io/) as a text edito
 
 ## Disadvantages of AngularJS
 
-Though AngularJS comes with lots of plus points but same time we should consider the following points:
+  Though AngularJS comes with lots of plus points but same time we should consider the following points:
 - **Not Secure** − Being JavaScript only framework, application written in AngularJS are not safe. Server side authentication and authorization is must to keep an application secure.
 - **Not degradable** − If your application user disables JavaScript then user will just see the basic page and nothing more.
